@@ -42,7 +42,7 @@ def startApp():
     textLogin = tk.Label(authenticationPage, text="Usuário").grid(row=1, column=0)
     textPwrd = tk.Label(authenticationPage, text="Senha").grid(row=2, column=0)
 
-    log = tk.StringVar(value='brunomurino')
+    log = tk.StringVar(value='johndoe')
     pwrd = tk.StringVar(value='senha')
 
     entryLogin = tk.Entry(authenticationPage, textvariable=log)
