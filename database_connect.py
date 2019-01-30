@@ -2,7 +2,9 @@ import sqlalchemy as sql
 from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey
 from sqlalchemy import inspect
 
-def runQuery(query, connect_string = 'mysql+mysqlconnector://root:password@localhost/EINSTEIN'):
+def runQuery(query):
+
+    connect_string = 'mysql+mysqlconnector://root:password@localhost/EINSTEIN'
 
     engine = sql.create_engine(connect_string)
     
